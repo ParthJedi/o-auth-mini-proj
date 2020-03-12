@@ -1,0 +1,23 @@
+{
+  "name": "o-auth-mini-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParthJedi/o-auth-mini-proj.git"
+  },
+  "author": "parthJoshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParthJedi/o-auth-mini-proj/issues"
+  },
+  "homepage": "https://github.com/ParthJedi/o-auth-mini-proj#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
