@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const passport = require('passport');
 
 // login page
 router.get('/login', (req, res) => {
@@ -12,17 +13,13 @@ router.get('/logout', (req, res) => {
 })
 
 // o-auth Google handler
-router.get('/google', (req, res) => {
-    // passport handler
-    res.send("logging with Google");
+router.get('/google', passport.authenticate('google', {
+     scope: ['profile']
+    })
+);
 
-})
-
-// o-auth Facebook handler
-router.get('/facebook', (req, res) => {
-    // passport handler
-    res.send("logging with Facebook");
-
+router.get('/google/redirect', passport.authenticate('google'),(req, res) => {
+     res.send('home page coming soon');
 })
 
 module.exports = router;
