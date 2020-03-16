@@ -2,3 +2,4 @@ node_modules/
 share/
 bin/
 lib/
+config/keys.js
