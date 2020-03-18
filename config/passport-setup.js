@@ -10,8 +10,8 @@ passport.use(
     clientSecret: keys.google.clientSecret
 }, (accessToken, refreshToken, profile, done) => {
     // cb function for passport
-    console.log('cb fired!');
+    console.log('passport cb fired!');
     console.log(profile);
-    done();
+    // done();
 })
 )
