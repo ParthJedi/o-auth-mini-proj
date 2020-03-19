@@ -7,16 +7,19 @@
 </head>
 <body>
     <nav>
-        <ul>
+        <ul>            
             <li>
                 <a href="/">Home</a>
             </li>
+            <% if(!user) { %>
             <li>
                 <a href="/auth/login">Login</a>
             </li>
+            <% } else { %>
             <li>
                 <a href="/auth/logout">Logout</a>
             </li>
+            <% } %>
         </ul>
     </nav>
     <header>
